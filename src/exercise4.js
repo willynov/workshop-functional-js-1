@@ -12,9 +12,23 @@ var promiseStrings = new Promise(function (fulfill, reject) {
 })
 
 const asyncYolo = (input) => {
-
+  
   // Your future job begins here ...
-
+  'use strict';
+  var tab1 = [];
+  var tab2 = [];
+  promiseNumbers.then(
+    (item) => {
+      tab1 = item
+    }
+  );
+  promiseStrings.then(
+    (item) => {
+      tab2 = item
+    }
+  );
+  //console.log('TAB 1', tab1);
+  //console.log('TAB 2', tab2);
 }
 
 module.exports = {
